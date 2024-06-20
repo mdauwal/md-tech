@@ -1,0 +1,211 @@
+/* External CSS */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: "Merriweather", serif;
+    }
+    .hero {
+      background: url("./asset/hero2.jpg");
+      height: 70vh;
+      width: 100%;
+      background-size: cover;
+      background-position: top 25% right 0;
+      padding: 0 80px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+    }
+    .title{
+        color: #f4f4f4f4;
+        
+    }
+    .title-para{
+        color: #f4f4f4f4;
+    }
+    #header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 80px;
+  background: var(--light);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#navbar li {
+  list-style: none;
+  padding: 0 20px;
+  position: relative;
+}
+#navbar li a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--dark-color);
+  transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+  color: lightblue;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+  content: "";
+  width: 30%;
+  height: 2px;
+  background: #050C9C;
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
+}
+.logo{
+    border-radius: 50%;
+}
+ /* Basic styling for the container */
+ .cont {
+            font-family: 'Merriweather', serif;
+            font-size: 2rem;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 20%;
+            position: relative;
+            height: 50px; /* Adjust based on your preference */
+        }
+
+        /* Hide both texts initially */
+        .text1, .text2 {
+            opacity: 0;
+            position: absolute;
+            transition: opacity 1s ease-in-out;
+        }
+
+        /* Animation to toggle visibility */
+        @keyframes fadeInOut {
+            0%, 25% { opacity: 0; }
+            5%, 20% { opacity: 1; }
+            30%, 100% { opacity: 0; }
+        }
+
+        /* Apply animation with different delays */
+        .text1 {
+            animation: fadeInOut 6s infinite;
+            color: #050C9C;
+        }
+
+        .text2 {
+            animation: fadeInOut 6s infinite 3s;
+            color: #050C9C;
+        }
+        .intro{
+        height: 70vh;
+        width: 100%;
+        padding: 0 80px;
+        align-items: center;
+        justify-content: center;
+        background: #fff;
+        margin-top: 40px;
+        
+        }
+        
+        img{
+        float: right;
+        border-radius: 50px;
+        height: 200px;
+        }
+        .para-intro{
+        clear: both;
+        margin-top: 0px;
+        margin-bottom: 20px;
+        font-weight: bold;
+        color: black;
+        }
+        .overview{
+        clear: right;
+        margin: 20px 20px;
+        color: #4B70F5;
+        }
+        .para-me{
+        padding-right: 50px;
+        padding-left: 30px;
+        color: lightslategray;
+        line-height: 2rem;
+        }
+        .intro {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: left;
+        }
+
+        .intro img {
+            margin-right: 20px;
+        }
+
+        .vertical-line {
+            border-left: 2px solid #000;
+            height: 200px; /* Adjust height as needed */
+            margin: 0 20px;
+        }
+
+        .para-me {
+            margin-left: 20px;
+        }
+        .reality{
+            color: #4B70F5;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .education {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            margin: 20px 0;
+            height: 70vh;
+        width: 100%;
+        padding: 0 80px;
+        align-items: center;
+        justify-content: center;
+        background: #fff;
+        }
+        
+        .edu-cont {
+            display: flex;
+            flex: 1;
+        }
+        
+        .edu-title {
+            flex: 1;
+            text-align: left;
+        }
+        
+        .edu-details {
+            flex: 2;
+            text-align: left;
+        }
+        
+        .school {
+            margin-bottom: 20px;
+        }
+        
+        .school .degree {
+            font-weight: bold;
+        }
+        
+        .school .year {
+            color: gray;
+        }
+        
